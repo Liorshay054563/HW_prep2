@@ -1,0 +1,34 @@
+--a
+SELECT * from courses
+INNER join lecturers on courses.lecturer_id = lecturers.lecturer_id
+
+-- b
+SELECT * FROM courses
+LEFT JOIN lecturers on courses.lecturer_id = lecturers.lecturer_id
+WHERE lecturers.lecturer_id is NULL
+
+-- c
+SELECT * from courses
+left join lecturers on courses.lecturer_id = lecturers.lecturer_id
+
+-- d
+SELECT * from lecturers
+inner JOIN courses on lecturers.lecturer_id = courses.lecturer_id
+
+-- e
+SELECT * from lecturers
+LEFT JOIN courses on lecturers.lecturer_id = courses.lecturer_id
+WHERE courses.lecturer_id is NULL
+
+-- f
+SELECT * from lecturers
+LEFT JOIN courses on lecturers.lecturer_id = courses.lecturer_id
+
+-- g
+SELECT * FROM courses
+FULL JOIN lecturers on courses.lecturer_id = lecturers.lecturer_id
+
+-- h
+SELECT * from courses
+CROSS JOIN lecturers 
+
