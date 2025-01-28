@@ -29,6 +29,6 @@ SELECT * FROM courses
 FULL JOIN lecturers on courses.lecturer_id = lecturers.lecturer_id
 
 -- h
-SELECT * from courses
-CROSS JOIN lecturers 
+SELECT * from lecturers
+CROSS JOIN courses 
 
